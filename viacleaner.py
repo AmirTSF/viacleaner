@@ -13,10 +13,10 @@ bot = Client(
     "my_account1",
     api_id=348759,
     api_hash="5dc6f4b54b1985199b42a069a5745306",
-    bot_token='870869086:AAFDcwBlea_k3O6tX-QxA9RQNYiaEXZsoi4',
+    bot_token='TOKEN',
     workers=5,
 )
-conn = sqlite3.connect("mydatabase.db", check_same_thread = False) # или :memory: чтобы сохранить в RAM
+conn = sqlite3.connect("mydatabase.db", check_same_thread = False)
 cursor = conn.cursor()
 
 bot.start()
