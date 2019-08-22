@@ -28,7 +28,7 @@ bot.send_message(config.admin, 'Я был запущен! New V ')
 
 
 @bot.on_message(Filters.command("stats"))
-def start(client, message):
+def stats(client, message):
 	try:
 		if message.chat.id == config.admin:
 			cursor.execute('SELECT * FROM deleted_messages')
